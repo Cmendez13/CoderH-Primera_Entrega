@@ -1,0 +1,47 @@
+{% extends 'inicio.html' %}
+
+{% block content %}
+
+
+
+<div class="container mt-5"> 
+
+    <h1> Listado de Asignaciones </h1>
+    <br>
+
+    <table class="table">
+
+        <thead>
+
+            <tr>
+                <th> Marca </th>
+                <th> Modelo </th>
+                <th> Dominio </th> 
+            </tr>
+    
+        </thead>
+        
+        <tbody>
+            <!-- Recorre la data de asginados-->
+            {% for asignacion in asignaciones %}
+            
+                <tr>
+                    <td> {{asignacion.fecha_asignacion}}  </td>
+                    <td> {{asignacion.dominio}} </td>
+                    <td> {{asignacion.dni_conductor}}  </td>
+                </tr>    
+      
+    
+
+            {% endfor %}
+
+ 
+
+        </tbody>
+    </table>
+
+    
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'inicio.html' %}
+
+{% block content %}
+
+
+
+<div class="container mt-5"> 
+
+    <h1> Listado de Conductores </h1>
+    <br>
+
+    <table class="table">
+
+        <thead>
+
+            <tr>
+                <th> Nombre </th>
+                <th> Apellido </th>
+                <th> Sector </th> 
+            </tr>
+    
+        </thead>
+        
+        <tbody>
+            <!-- Recorre la data de conductores-->
+            {% for conductor in conductores %}
+                <tr>
+                    <td> {{conductor.primer_nombre}}  </td>
+                    <td> {{conductor.primer_apellido}} </td>
+                    <td> {{conductor.sector}}  </td>
+                </tr>    
+      
+    
+
+            {% endfor %}
+
+ 
+
+        </tbody>
+    </table>
+
+    
+
+</div>
+
+{% endblock %}

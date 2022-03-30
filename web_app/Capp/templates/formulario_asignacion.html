@@ -1,0 +1,33 @@
+{% extends 'inicio.html' %}
+{% block content %}
+
+<h1>Registro de Asignacion</h1>
+    
+{% if AsignacionFormulario.errors %}
+
+<p style="color: rgb(255, 72, 0);"> Favor revise los datos</p>
+
+{% endif %}
+
+
+<div class="container">
+
+<form action="" method="POST">
+    
+    {% csrf_token %}
+
+    <table>
+
+        {{ AsignacionFormulario.as_table }}
+
+
+    </table>
+
+
+    <input type="submit", value="Confirmar ALTA asignacion">
+
+</form>
+
+</div>
+
+{% endblock %}

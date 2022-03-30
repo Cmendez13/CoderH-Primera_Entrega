@@ -1,0 +1,35 @@
+{% extends 'inicio.html' %}
+{% block content %}
+
+<h1>Registro de Conductores</h1>
+    
+{% if ConductorFormulario.errors %}
+
+<p style="color: rgb(0, 255, 128);"> Favor revise los datos</p>
+
+{% endif %}
+
+
+<div class="container">
+
+<form action="" method="POST">
+    
+    {% csrf_token %}
+
+    
+    
+    <table>
+
+        {{ ConductorFormulario.as_table }}
+
+
+    </table>
+
+
+    <input type="submit", value="Confirmar ALTA Conductor">
+
+</form>
+
+</div>
+
+{% endblock %}

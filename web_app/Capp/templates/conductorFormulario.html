@@ -1,0 +1,43 @@
+{% extends 'inicio.html' %}
+{% load static %}
+{% block content %}
+
+<form class="main_form ">
+
+    <div class="row">
+
+       <div class="col-md-12 ">
+
+          <input class="form_contril" placeholder="Name " type="text" name="Name ">
+
+       </div>
+
+       <div class="col-md-12">
+
+          <input class="form_contril" placeholder="Phone Number" type="text" name=" Phone Number">
+
+       </div>
+
+       <div class="col-md-12">
+
+          <input class="form_contril" placeholder="Email" type="text" name="Email">
+
+       </div>
+
+       <div class="col-md-12">
+
+          <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+
+       </div>
+
+       <div class="col-sm-12">
+
+          <button class="send_btn">Send</button>
+
+       </div>
+
+    </div>
+
+ </form>
+
+ {% endblock %}
