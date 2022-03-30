@@ -4,12 +4,12 @@ Por Carlos Méndez
 
 Este trabajo constituye la primera entrega del proyecto Final del Curso Programación en Python
 
-Para ello se desarrollo una Web que permite gestionar lal creación y manejo de:
+Para ello se desarrollo una Web que permite gestionar lal creación y manejo de una flota vehicular:
  * Conductores
  * Vehiculos
  * Asignaciones
 
-Dicho proyecto cuenta con 9 archivos html (con el archivo de nombre "inicio.html" como base (*))
+Dicho proyecto cuenta con 9 archivos html (teniendo al archivo de nombre "inicio.html" como base (*))
 
 Tres modelos:
  * Conductores
