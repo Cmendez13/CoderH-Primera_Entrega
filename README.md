@@ -2,7 +2,7 @@
 Primera Entrega Programación en Python
 Por Carlos Méndez
 
-Este trabaja constituye la primera entrega del proyecto Final del Curso Programación en Python
+Este trabajo constituye la primera entrega del proyecto Final del Curso Programación en Python
 
 Para ello se desarrollo una Web que permite gestionar lal creación y manejo de:
  * Conductores
